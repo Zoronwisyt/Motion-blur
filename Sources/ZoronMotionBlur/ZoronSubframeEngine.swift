@@ -28,7 +28,7 @@ public class ZoronSubframeEngine {
         }
         
         let originalSelector = NSSelectorFromString("display")
-        let swizzledSelector = #selector(swizzled_display)
+        let swizzledSelector = NSSelectorFromString("swizzled_display")
         
         ZoronMethodSwizzler.swizzle(cls: renderClass, 
                                     originalSelector: originalSelector, 
